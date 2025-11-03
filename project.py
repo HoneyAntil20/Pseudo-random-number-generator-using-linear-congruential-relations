@@ -188,7 +188,7 @@ def main():
         multiplier = int(st.number_input("Multiplier", value=1103515245, step=1, format="%d"))
         increment = int(st.number_input("Increment", value=12345, step=1, format="%d"))
         seed = int(st.number_input("Seed", value=42, step=1, format="%d"))
-        count = int(st.slider("Sequence Length", min_value=1, max_value=500, value=50, step=1))
+        count = int(st.slider("Sequence Length", min_value=1, max_value=1500, value=50, step=1))
         st.markdown("---")
         config_col, generate_col = st.columns(2)
         configure_clicked = config_col.button("Apply Settings", use_container_width=True)
